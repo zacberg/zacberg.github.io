@@ -4,6 +4,8 @@
 
 A standalone example care-coordination dashboard for assigning doctors, pharmacies, and caretakers to fictional patients.
 
+The fictional patient and care-team portraits load from Unsplash and require an internet connection.
+
 ## Run
 
 Open `index.html` in a browser. No dependencies, server, or build step are required.
