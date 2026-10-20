@@ -1,20 +1,29 @@
-# zacberg.github.io
+# Webmed class prototype
 
-## CareRelay
-
-A standalone example care-coordination dashboard for assigning doctors, pharmacies, and caretakers to fictional patients.
-
-The fictional patient and care-team portraits load from Unsplash and require an internet connection.
+Webmed is a static healthcare service prototype that brings fictional doctor search, insurance, pharmacy, orders, and payment screens into one account. It also includes a care-coordinator patient roster. Every displayed person and record is fictional.
 
 ## Run
 
-Open `index.html` in a browser. No dependencies, server, or build step are required.
+Open `index.html` in a browser or publish the repository with GitHub Pages. There are no dependencies, frameworks, build steps, or backend services. The app uses hash routes such as `#/login`, `#/register`, `#/home`, and `#/requirements`.
 
-## Included interactions
+## Demo accounts
 
-- Change a patient's doctor, pharmacy, or caretaker assignment.
-- Search the roster and filter records by assignment completeness.
-- Add a fictional patient record.
-- Export the roster as a CSV file.
+Every seeded account uses password `demo123`:
 
-All displayed names and records are fictional. This is a visual example only and must not be used with real patient information or for clinical decisions.
+| Role | Email |
+| --- | --- |
+| Patient | `elena@demo.test` |
+| Patient | `priya@demo.test` |
+| Caregiver | `sam@demo.test` |
+| Provider | `dr.chen@demo.test` |
+| Care coordinator | `jordan@demo.test` |
+
+The complete demo state is stored under the single localStorage key `carerelay-demo`. Use **Reset demo data** in the footer to restore the seeded accounts and records.
+
+## Files
+
+- `index.html` contains the shared page shell.
+- `styles.css` contains the responsive visual styles.
+- `app.js` contains hash routing, demo data, and prototype interactions.
+
+This is a class prototype only. Do not enter real patient information or use it for medical decisions.
